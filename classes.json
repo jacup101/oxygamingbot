@@ -1,0 +1,48 @@
+{
+    "message": "React to this message to show what class you're in!", 
+    "linker": "==>",
+    "list": [
+        {
+            "emote": "🎓",
+            "emote_name": "graduation_cap",
+            "is_custom": "no",
+            "description": "Alumni",
+            "role_name": "Alumni"
+        },
+        {
+            "emote": "3️⃣",
+            "emote_name": "three",
+            "is_custom": "no",
+            "description": "Class of '23",
+            "role_name": "Class of '23"
+        },
+        {
+            "emote": "4️⃣",
+            "emote_name": "four",
+            "is_custom": "no",
+            "description": "Class of '24",
+            "role_name": "Class of '24"
+        },
+        {
+            "emote": "5️⃣",
+            "emote_name": "five",
+            "is_custom": "no",
+            "description": "Class of '25",
+            "role_name": "Class of '25"
+        },
+        {
+            "emote": "6️⃣",
+            "emote_name": "six",
+            "is_custom": "no",
+            "description": "Class of '26",
+            "role_name": "Class of '26"
+        },
+        {
+            "emote": "7️⃣",
+            "emote_name": "seven",
+            "is_custom": "no",
+            "description": "Class of '27",
+            "role_name": "Class of '27"
+        }
+    ]
+}

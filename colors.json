@@ -1,0 +1,55 @@
+{
+    "message": "React to this message if you want your name to appear as a specific color!", 
+    "linker": "==>",
+    "list": [
+        {
+            "emote": "❤️",
+            "emote_name": "red_heart",
+            "is_custom": "no",
+            "description": "Red Squad",
+            "role_name": "Red Squad"
+        },
+        {
+            "emote": "💜",
+            "emote_name": "purple_heart",
+            "is_custom": "no",
+            "description": "Purple Squad",
+            "role_name": "Purple Squad"
+        },
+        {
+            "emote": "💚",
+            "emote_name": "green_heart",
+            "is_custom": "no",
+            "description": "Green Squad",
+            "role_name": "Green Squad"
+        },
+        {
+            "emote": "🧡",
+            "emote_name": "orange_heart",
+            "is_custom": "no",
+            "description": "Orange Squad",
+            "role_name": "Orange Squad"
+        },
+        {
+            "emote": "💛",
+            "emote_name": "yellow_heart",
+            "is_custom": "no",
+            "description": "Yellow Squad",
+            "role_name": "Yellow Squad"
+        },
+        {
+            "emote": "💗",
+            "emote_name": "pink_heart",
+            "is_custom": "no",
+            "description": "Pink Squad",
+            "role_name": "Pink Squad"
+        },
+        {
+            "emote": "💙",
+            "emote_name": "blue_heart",
+            "is_custom": "no",
+            "description": "Blue Squad",
+            "role_name": "Blue Squad"
+        }
+    ]
+}

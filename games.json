@@ -1,0 +1,146 @@
+{
+    "message": "React to this message to let everyone know what games you play!", 
+    "linker": "==>",
+    "list": [
+        {
+            "emote": "<:smash:1014363008618725446>",
+            "emote_name": "smash",
+            "is_custom": "yes",
+            "description": "Smash Ultimate",
+            "role_name": "Smash Ultimate"
+        },
+        {
+            "emote": "<:melee:1016585410056572928>",
+            "emote_name": "melee",
+            "is_custom": "yes",
+            "description": "Smash Melee",
+            "role_name": "Smash Melee"
+        },
+        {
+            "emote": "<:league:1014363098829824071>",
+            "emote_name": "league",
+            "is_custom": "yes",
+            "description": "League of Legends",
+            "role_name": "League"
+        },
+        {
+            "emote": "<:dota:1016585418130595881>",
+            "emote_name": "dota",
+            "is_custom": "yes",
+            "description": "Dota 2",
+            "role_name": "Dota"
+        },
+        {
+            "emote": "<:valorant:1014363060011540560>",
+            "emote_name": "valorant",
+            "is_custom": "yes",
+            "description": "Valorant",
+            "role_name": "Valorant"
+        },
+        {
+            "emote": "<:csgo:1016585419187568651>",
+            "emote_name": "valorant",
+            "is_custom": "yes",
+            "description": "CS:GO",
+            "role_name": "CSGO"
+        },
+        {
+            "emote": "<:overwatch:1016585421691559966>",
+            "emote_name": "overwatch",
+            "is_custom": "yes",
+            "description": "Overwatch",
+            "role_name": "Overwatch"
+        },
+        {
+            "emote": "<:apex:1016587148020944986>",
+            "emote_name": "apex",
+            "is_custom": "yes",
+            "description": "Apex Legends",
+            "role_name": "Apex Legends"
+        },
+        {
+            "emote": "<:fortnite:1016585411407118388>",
+            "emote_name": "fortnite",
+            "is_custom": "yes",
+            "description": "Fortnite",
+            "role_name": "Fortnite"
+        },
+        {
+            "emote": "<:r6:1016585619163590669>",
+            "emote_name": "r6",
+            "is_custom": "yes",
+            "description": "Rainbow Six Siege",
+            "role_name": "Rainbow6"
+        },
+        {
+            "emote": "<:halo:1016585413340696646>",
+            "emote_name": "halo",
+            "is_custom": "yes",
+            "description": "Halo",
+            "role_name": "Halo"
+        },
+        {
+            "emote": "<:cod:1016585417178488832>",
+            "emote_name": "cod",
+            "is_custom": "yes",
+            "description": "Call of Duty",
+            "role_name": "Call of Duty"
+        },
+        {
+            "emote": "<:rocketleague:1016592884088188959>",
+            "emote_name": "rocketleague",
+            "is_custom": "yes",
+            "description": "Rocket League",
+            "role_name": "Rocket League"
+        },
+        {
+            "emote": "<:nba2k:1016592877595398154>",
+            "emote_name": "nba2k",
+            "is_custom": "yes",
+            "description": "NBA 2K",
+            "role_name": "NBA 2K"
+        },
+        {
+            "emote": "<:fifa:1016593982760951848>",
+            "emote_name": "fifa",
+            "is_custom": "yes",
+            "description": "FIFA",
+            "role_name": "FIFA"
+        },
+        {
+            "emote": "<:minecraft:1014362981724868628>",
+            "emote_name": "minecraft",
+            "is_custom": "yes",
+            "description": "Minecraft",
+            "role_name": "Minecraft"
+        },
+        {
+            "emote": "<:terraria:1016594002310594592>",
+            "emote_name": "terraria",
+            "is_custom": "yes",
+            "description": "Terraria",
+            "role_name": "Terraria"
+        },
+        {
+            "emote": "<:stardew:1016594245861244979>",
+            "emote_name": "stardew",
+            "is_custom": "yes",
+            "description": "Stardew Valley",
+            "role_name": "Stardew"
+        },
+        {
+            "emote": "<:fallguys:1016592886525079573>",
+            "emote_name": "fallguys",
+            "is_custom": "yes",
+            "description": "Fall Guys",
+            "role_name": "Fall Guys"
+        },
+        {
+            "emote": "<:amongus:1016592885694595152>",
+            "emote_name": "amongus",
+            "is_custom": "yes",
+            "description": "Among Us",
+            "role_name": "Among Us"
+        }
+    ]
+}

@@ -1,0 +1,35 @@
+{
+    "message": "React to this message to let everyone know what your pronouns are!", 
+    "linker": "==>",
+    "list": [
+        {
+            "emote": "🇸",
+            "emote_name": "s",
+            "is_custom": "no",
+            "description": "(she/her)",
+            "role_name": "(she/her)"
+        },
+        {
+            "emote": "🇭",
+            "emote_name": "h",
+            "is_custom": "no",
+            "description": "(he/him)",
+            "role_name": "(he/him)"
+        },
+        {
+            "emote": "🇹",
+            "emote_name": "t",
+            "is_custom": "no",
+            "description": "(they/them)",
+            "role_name": "(they/them)"
+        },
+        {
+            "emote": "🇳",
+            "emote_name": "n",
+            "is_custom": "no",
+            "description": "(no preference)",
+            "role_name": "(no preference)"
+        }
+
+    ]
+}

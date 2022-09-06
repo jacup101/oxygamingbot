@@ -1,0 +1,34 @@
+{
+    "message": "React to this message with your preferred gaming platforms!", 
+    "linker": "==>",
+    "list": [
+        {
+            "emote": "<:pc:1016835966377410582>",
+            "emote_name": "pc",
+            "is_custom": "yes",
+            "description": "PC",
+            "role_name": "PC"
+        },
+        {
+            "emote": "<:xbox:1016835703834951791>",
+            "emote_name": "xbox",
+            "is_custom": "yes",
+            "description": "Xbox",
+            "role_name": "Xbox"
+        },
+        {
+            "emote": "<:playstation:1016835701473542225>",
+            "emote_name": "playstation",
+            "is_custom": "yes",
+            "description": "Playstation",
+            "role_name": "Playstation"
+        },
+        {
+            "emote": "<:nintendo:1016835697732223108>",
+            "emote_name": "nintendo",
+            "is_custom": "yes",
+            "description": "Nintendo",
+            "role_name": "Nintendo"
+        }
+    ]
+}

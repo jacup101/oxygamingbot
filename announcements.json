@@ -1,0 +1,27 @@
+{
+    "message": "React to this message to receive pings for announcements!", 
+    "linker": "==>",
+    "list": [
+        {
+            "emote": "<:oxylove:1016461942984015953>",
+            "emote_name": "oxylove",
+            "is_custom": "yes",
+            "description": "Yes",
+            "role_name": "Notification Squad"
+        },
+        {
+            "emote": "<:oxygg:1016461944208773230>",
+            "emote_name": "oxygg",
+            "is_custom": "yes",
+            "description": "Yes",
+            "role_name": "Notification Squad"
+        },
+        {
+            "emote": "<:oxysalt:1016461945525764187>",
+            "emote_name": "oxysalt",
+            "is_custom": "yes",
+            "description": "Yes",
+            "role_name": "Notification Squad"
+        }
+    ]
+}
