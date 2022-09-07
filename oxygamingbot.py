@@ -9,37 +9,27 @@ import json
 import discord.utils as discUtils
 import uuid
 
+config = None
+with open("config.json") as f:
+    config = json.load(f)
 
 intents = discord.Intents.all()
 intents.members = True
-bot = commands.Bot(command_prefix="?oxy.!", intents=intents)
+bot = commands.Bot(command_prefix=config["prefix"], intents=intents)
 
 type_defs_list = None
 welcome = None
 type_defs = {}
 messages = {}
-class RoleEmote:
-    role = "default"
-    fileName = "default.mp3"
-    type = "EmoteItem"
-
-    def __init__(self, name, fileName, type):
-        self.name = name
-        self.fileName = fileName
-        self.type = type
-
-    def __str__(self):
-        return "{name}".format(name=self.name)
-
-
 
 @bot.event
 async def on_connect():
-    global type_defs, type_defs_list, welcome
+    global type_defs, type_defs_list, welcome, token
     activity = discord.Game(name="games in LIB364", type=3)
     await bot.change_presence(status=discord.Status.idle,activity=activity)
     print("Bot is online\nReading Data")
-    
+    # Read important files
+
     with open("type_defs.json") as f:
         type_defs_list = json.load(f)
     with open("welcome.json") as f:
@@ -48,7 +38,6 @@ async def on_connect():
         with open("{type}.json".format(type=type_def)) as f:
             type_defs[type_def] = json.load(f)
             messages[type_def] = await create_message(type_defs[type_def])
-
 
 @bot.event
 async def on_raw_reaction_add(payload):
@@ -94,14 +83,10 @@ async def handle_reaction(guild, user, payload, action, type_def):
         return
     role = discUtils.get(guild.roles, name=emote["role_name"])
 
-    # TODO: Add check for roles, and removal of roles
     if role in user.roles and "remove" in action:
         await user.remove_roles(role)
     if role not in user.roles and "add" in action:
         await user.add_roles(role)
-
-    #print(hasRole)
-    #await user.add_roles(role)
 
 async def send_message(context, type):
     message = await create_message(type)
@@ -120,7 +105,6 @@ async def create_message(type):
     finalMessage = "\n**{message}**\n{list}".format(message=msg, list=listStr)
     return finalMessage
 
-
 # Payload not necessary here, but passed in anyway
 async def check_for_emote(list, payload):
     finalItem = None
@@ -132,7 +116,6 @@ async def check_for_emote(list, payload):
             break
     return finalItem
 
-
 async def react_get_count(listItem, payload):
     if "yes" in listItem['is_custom']:
 
@@ -141,7 +124,6 @@ async def react_get_count(listItem, payload):
         countItem = payload.emoji.name.count(listItem['emote'])
     return countItem
 
-
 async def add_reactions(list, message, start, end):
     length = end - start
     for i in range(length):
@@ -149,4 +131,4 @@ async def add_reactions(list, message, start, end):
         emote = item["emote"]
         await message.add_reaction(emote)
 
-bot.run("MTAxNDM0ODk5ODY4Mjg4MjEyOA.GS6hBC.iXVJ_GleVQlJ5C3JGb_LoA4eDlbkXvQ_NgX96I")
+bot.run(config["token"])
