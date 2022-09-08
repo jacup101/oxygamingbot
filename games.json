@@ -21,7 +21,7 @@
             "emote_name": "league",
             "is_custom": "yes",
             "description": "League of Legends",
-            "role_name": "League"
+            "role_name": "League of Legends"
         },
         {
             "emote": "<:dota:1016585418130595881>",
@@ -39,7 +39,7 @@
         },
         {
             "emote": "<:csgo:1016585419187568651>",
-            "emote_name": "valorant",
+            "emote_name": "csgo",
             "is_custom": "yes",
             "description": "CS:GO",
             "role_name": "CSGO"

@@ -1,13 +1,7 @@
-import random
-
 import discord
-from discord.ext.tasks import loop
-import asyncio
-
 from discord.ext import commands
 import json
 import discord.utils as discUtils
-import uuid
 
 config = None
 with open("config.json") as f:
@@ -28,8 +22,8 @@ async def on_connect():
     activity = discord.Game(name="games in LIB364", type=3)
     await bot.change_presence(status=discord.Status.idle,activity=activity)
     print("Bot is online\nReading Data")
-    # Read important files
-
+    
+    # Read files
     with open("type_defs.json") as f:
         type_defs_list = json.load(f)
     with open("welcome.json") as f:
@@ -105,12 +99,19 @@ async def create_message(type):
     finalMessage = "\n**{message}**\n{list}".format(message=msg, list=listStr)
     return finalMessage
 
-# Payload not necessary here, but passed in anyway
 async def check_for_emote(list, payload):
     finalItem = None
     for listItem in list:
         countItem = await react_get_count(listItem, payload)
-        if countItem > 0:
+        canProceed = True
+        if "yes" in listItem["is_custom"]:
+            print(payload.emoji.name)
+            print(listItem["emote_name"])
+            if payload.emoji.name not in listItem["emote_name"]:
+                canProceed = False
+                print("okay")
+                
+        if countItem > 0 and canProceed:
             found = True
             finalItem = listItem
             break
@@ -118,7 +119,6 @@ async def check_for_emote(list, payload):
 
 async def react_get_count(listItem, payload):
     if "yes" in listItem['is_custom']:
-
         countItem = payload.emoji.name.count(listItem['emote_name'])
     else:
         countItem = payload.emoji.name.count(listItem['emote'])
